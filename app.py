@@ -35,4 +35,27 @@ dob = st.date_input(
     max_value=date.today()
 )
 
+# -------------------------
+# Session State
+# -------------------------
+
+if "step" not in st.session_state:
+    st.session_state.step = 1
+
+
+if st.button("Continue"):
+
+    today = date.today()
+
+    age = today.year - dob.year
+
+    if (today.month, today.day) < (dob.month, dob.day):
+        age -= 1
+
+    st.session_state.age = age
+    st.session_state.dob = dob
+    st.session_state.step = 2
+
+    st.rerun()
+
 st.markdown("</div>", unsafe_allow_html=True)
