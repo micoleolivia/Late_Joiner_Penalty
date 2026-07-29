@@ -7,7 +7,7 @@ A client-facing web tool built for Rehealth to help South Africans determine whe
 
 ## Overview
 
-Joining a medical aid scheme in South Africa for the first time (or after a gap in cover) may result in a **late joiner penalty** — a percentage loading added to your monthly premium. This tool walks users through a simple step-by-step form to calculate their penalty based on their age and years of credible medical aid cover.
+Joining a medical aid scheme in South Africa for the first time (or after a gap in cover) may result in a **late joiner penalty**, a percentage loading added to your monthly premium. This tool walks users through a simple step-by-step form to calculate their penalty based on their age and years of credible medical aid cover.
 
 The project was built to demonstrate skills in frontend web development, form logic, and user experience design for a real-world healthcare client.
 
