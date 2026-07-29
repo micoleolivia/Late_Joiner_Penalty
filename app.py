@@ -25,15 +25,34 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('<div class="card">', unsafe_allow_html=True)
+if st.session_state.step == 1:
 
-st.subheader("Step 1")
+    st.markdown('<div class="card">', unsafe_allow_html=True)
 
-dob = st.date_input(
-    "Date of Birth",
-    min_value=date(1900,1,1),
-    max_value=date.today()
-)
+    st.subheader("Step 1")
+
+    dob = st.date_input(
+        "Date of Birth",
+        min_value=date(1900,1,1),
+        max_value=date.today()
+    )
+
+    if st.button("Continue"):
+
+        today = date.today()
+
+        age = today.year - dob.year
+
+        if (today.month, today.day) < (dob.month, dob.day):
+            age -= 1
+
+        st.session_state.age = age
+        st.session_state.dob = dob
+        st.session_state.step = 2
+
+        st.rerun()
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # -------------------------
 # Session State
