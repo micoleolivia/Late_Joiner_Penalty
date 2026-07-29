@@ -36,3 +36,32 @@ dob = st.date_input(
 )
 
 st.markdown("</div>", unsafe_allow_html=True)
+
+# ----------------------------------------------------
+# Step 2
+# ----------------------------------------------------
+
+st.markdown('<div class="card">', unsafe_allow_html=True)
+
+st.subheader("Step 2")
+
+had_aid = st.radio(
+    "Have you ever had medical aid cover in South Africa?",
+    ["Yes", "No"],
+    horizontal=True
+)
+
+if had_aid == "Yes":
+
+    memberships = st.number_input(
+        "How many different medical aid memberships have you had?",
+        min_value=1,
+        max_value=20,
+        value=1,
+        step=1
+    )
+
+else:
+    memberships = 0
+
+st.markdown("</div>", unsafe_allow_html=True)
