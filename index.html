@@ -44,7 +44,7 @@
     height: 4px;
     flex: 1;
     border-radius: 2px;
-    background: #dce8f0;
+    background: #D8F0ED;
     transition: background 0.4s;
   }
   .ljp-progress-step.active { background: #00988E; }
@@ -52,8 +52,8 @@
 
   /* Cards / sections */
   .ljp-section {
-    background: #f4fafd;
-    border: 1px solid #d0e8f5;
+    background: #F3FBFA;
+    border: 1px solid #C7E8E4;
     border-radius: 12px;
     padding: 28px 28px 24px;
     margin-bottom: 20px;
@@ -86,7 +86,7 @@
   input[type="number"] {
     width: 100%;
     padding: 11px 14px;
-    border: 1.5px solid #c2d8e8;
+    border: 1.5px solid #B7DDD9;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.95rem;
@@ -113,7 +113,7 @@
     flex: 1;
     min-width: 120px;
     padding: 12px 20px;
-    border: 1.5px solid #c2d8e8;
+    border: 1.5px solid #B7DDD9;
     border-radius: 8px;
     background: #fff;
     font-family: 'DM Sans', sans-serif;
@@ -129,7 +129,7 @@
   /* Membership blocks */
   .ljp-membership {
     background: #fff;
-    border: 1px solid #d0e8f5;
+    border: 1px solid #C7E8E4;
     border-radius: 10px;
     padding: 18px 20px;
     margin-bottom: 14px;
@@ -153,7 +153,7 @@
     display: flex;
     align-items: center;
     gap: 0;
-    border: 1.5px solid #c2d8e8;
+    border: 1.5px solid #B7DDD9;
     border-radius: 8px;
     overflow: hidden;
     width: fit-content;
@@ -163,22 +163,22 @@
     width: 44px;
     height: 44px;
     border: none;
-    background: #f4fafd;
+    background: #F3FBFA;
     font-size: 1.2rem;
     color: #00988E;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.15s;
   }
-  .ljp-number-selector button:hover { background: #dce8f0; }
+  .ljp-number-selector button:hover { background: #D8F0ED; }
   .ljp-number-selector span {
     width: 52px;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 600;
     color: #1a2b3c;
-    border-left: 1px solid #d0e8f5;
-    border-right: 1px solid #d0e8f5;
+    border-left: 1px solid #C7E8E4;
+    border-right: 1px solid #C7E8E4;
     height: 44px;
     line-height: 44px;
   }
@@ -198,8 +198,8 @@
     cursor: pointer;
     transition: background 0.2s;
   }
-  .ljp-cta:hover { background: #005f96; }
-  .ljp-cta:disabled { background: #a0c4d8; cursor: not-allowed; }
+  .ljp-cta:hover { background: #007A72; }
+  .ljp-cta:disabled { background: #8FCBC5; cursor: not-allowed; }
 
   /* Result card */
   .ljp-result {
@@ -430,10 +430,10 @@
     const no = membership.querySelectorAll('.ljp-btn-cert')[1];
     yes.style.background = val ? '#00988E' : '#fff';
     yes.style.color = val ? '#fff' : '#1a2b3c';
-    yes.style.borderColor = val ? '#00988E' : '#c2d8e8';
+    yes.style.borderColor = val ? '#00988E' : '#B7DDD9';
     no.style.background = !val ? '#00988E' : '#fff';
     no.style.color = !val ? '#fff' : '#1a2b3c';
-    no.style.borderColor = !val ? '#00988E' : '#c2d8e8';
+    no.style.borderColor = !val ? '#00988E' : '#B7DDD9';
     document.getElementById(`ms${i}certError`).classList.remove('visible');
   }
 
@@ -473,8 +473,8 @@
         <div class="ljp-field" style="margin-top:12px;">
           <label>Do you have a medical aid certificate for this membership?</label>
           <div style="display:flex;gap:10px;margin-top:6px;">
-            <button type="button" class="ms-cert-yes ljp-btn-cert" onclick="selectCert(${i}, true)" style="flex:1;padding:10px;border:1.5px solid #c2d8e8;border-radius:8px;background:#fff;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;">Yes</button>
-            <button type="button" class="ms-cert-no ljp-btn-cert" onclick="selectCert(${i}, false)" style="flex:1;padding:10px;border:1.5px solid #c2d8e8;border-radius:8px;background:#fff;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;">No</button>
+            <button type="button" class="ms-cert-yes ljp-btn-cert" onclick="selectCert(${i}, true)" style="flex:1;padding:10px;border:1.5px solid #B7DDD9;border-radius:8px;background:#fff;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;">Yes</button>
+            <button type="button" class="ms-cert-no ljp-btn-cert" onclick="selectCert(${i}, false)" style="flex:1;padding:10px;border:1.5px solid #B7DDD9;border-radius:8px;background:#fff;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;cursor:pointer;">No</button>
           </div>
           <div class="ljp-error ms-cert-error" id="ms${i}certError">Please indicate whether you have a certificate.</div>
         </div>`;
