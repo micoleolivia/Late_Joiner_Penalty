@@ -47,7 +47,7 @@
     background: #dce8f0;
     transition: background 0.4s;
   }
-  .ljp-progress-step.active { background: #0077b6; }
+  .ljp-progress-step.active { background: #00988E; }
   .ljp-progress-step.done { background: #00b894; }
 
   /* Cards / sections */
@@ -97,7 +97,7 @@
   }
   input[type="date"]:focus,
   input[type="number"]:focus {
-    border-color: #0077b6;
+    border-color: #00988E;
   }
 
   .ljp-field { margin-bottom: 18px; }
@@ -123,8 +123,8 @@
     cursor: pointer;
     transition: all 0.2s;
   }
-  .ljp-btn-group button:hover { border-color: #0077b6; color: #0077b6; }
-  .ljp-btn-group button.selected { background: #0077b6; border-color: #0077b6; color: #fff; }
+  .ljp-btn-group button:hover { border-color: #00988E; color: #00988E; }
+  .ljp-btn-group button.selected { background: #00988E; border-color: #00988E; color: #fff; }
 
   /* Membership blocks */
   .ljp-membership {
@@ -137,7 +137,7 @@
   .ljp-membership-title {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #0077b6;
+    color: #00988E;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 14px;
@@ -165,7 +165,7 @@
     border: none;
     background: #f4fafd;
     font-size: 1.2rem;
-    color: #0077b6;
+    color: #00988E;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.15s;
@@ -188,7 +188,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 13px 32px;
-    background: #0077b6;
+    background: #00988E;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -257,7 +257,7 @@
     margin-top: 18px;
     display: inline-block;
     font-size: 0.875rem;
-    color: #0077b6;
+    color: #00988E;
     background: none;
     border: none;
     cursor: pointer;
@@ -428,12 +428,12 @@
     const membership = document.querySelectorAll('.ljp-membership')[i];
     const yes = membership.querySelectorAll('.ljp-btn-cert')[0];
     const no = membership.querySelectorAll('.ljp-btn-cert')[1];
-    yes.style.background = val ? '#0077b6' : '#fff';
+    yes.style.background = val ? '#00988E' : '#fff';
     yes.style.color = val ? '#fff' : '#1a2b3c';
-    yes.style.borderColor = val ? '#0077b6' : '#c2d8e8';
-    no.style.background = !val ? '#0077b6' : '#fff';
+    yes.style.borderColor = val ? '#00988E' : '#c2d8e8';
+    no.style.background = !val ? '#00988E' : '#fff';
     no.style.color = !val ? '#fff' : '#1a2b3c';
-    no.style.borderColor = !val ? '#0077b6' : '#c2d8e8';
+    no.style.borderColor = !val ? '#00988E' : '#c2d8e8';
     document.getElementById(`ms${i}certError`).classList.remove('visible');
   }
 
