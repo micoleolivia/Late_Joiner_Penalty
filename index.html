@@ -58,30 +58,44 @@
     background: linear-gradient(90deg, #F44900 0%, #FF8A52 100%);
 }
 
-	.ljp-step-labels {
-    display: flex;
-    justify-content: space-between;
-    margin: 14px 0 40px;
+	.ljp-step-labels{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:-20px 0 30px;
 }
 
-.ljp-step {
-    width: 32%;
+.ljp-step{
+    flex:1;
 }
 
-.ljp-step span {
-    display: block;
-    color: #F44900;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+.ljp-step:first-child{
+    text-align:left;
 }
 
-.ljp-step p {
-    margin-top: 6px;
-    color: #24364B;
-    font-size: 1rem;
-    font-weight: 500;
+.ljp-step:nth-child(2){
+    text-align:center;
+}
+
+.ljp-step:last-child{
+    text-align:right;
+}
+
+.ljp-step span{
+    display:block;
+    color:#F44900;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:4px;
+}
+
+.ljp-step p{
+    margin:0;
+    color:#24364B;
+    font-size:15px;
+    font-weight:600;
 }
 
   /* Cards / sections */
@@ -329,6 +343,25 @@ border: 2px solid #00988E;
     <div class="ljp-progress-step" id="prog2"></div>
     <div class="ljp-progress-step" id="prog3"></div>
   </div>
+
+	<div class="ljp-step-labels">
+
+    <div class="ljp-step">
+        <span>STEP 1</span>
+        <p>Date of Birth</p>
+    </div>
+
+    <div class="ljp-step">
+        <span>STEP 2</span>
+        <p>Medical Aid History</p>
+    </div>
+
+    <div class="ljp-step">
+        <span>STEP 3</span>
+        <p>Results</p>
+    </div>
+
+</div>
 
 	<div class="ljp-step-labels">
   <div class="ljp-step">
