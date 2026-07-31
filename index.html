@@ -48,8 +48,21 @@
     background: #D8F0ED;
     transition: background 0.4s;
   }
-  .ljp-progress-step.active { background: #00988E; }
-  .ljp-progress-step.done { background: #00b894; }
+ .ljp-progress-step {
+    height: 5px;
+    flex: 1;
+    border-radius: 999px;
+    background: #FFE6DA;
+    transition: all 0.35s ease;
+}
+
+.ljp-progress-step.active {
+    background: linear-gradient(90deg, #F44900 0%, #FF6B2C 100%);
+}
+
+.ljp-progress-step.done {
+    background: linear-gradient(90deg, #F44900 0%, #FF8A52 100%);
+}
 
   /* Cards / sections */
   .ljp-section {
